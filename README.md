@@ -4,12 +4,9 @@
   <img src="https://img.shields.io/github/stars/JefMoreira/NLW-Setup-Habit?label=stars&message=MIT&color=white&labelColor=38BDF8" alt="Stars">
 </p>
 
-![](./.github/cover.png)
+![](./.github/Cover.png)
 
-<br>
-<br>
-
-# Habits - Você no controle pra fazer de 2023 seu melhor ano em programação.
+<h2 align="center"># Habits - Você no controle pra fazer de 2023 seu melhor ano em programação.</h2>
 
 ## 🚀 Tecnologias
 
