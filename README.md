@@ -6,10 +6,7 @@
 
 ![](./.github/Cover.png)
 
-<br>
-<br>
-
-# Habits - Você no controle pra fazer de 2023 seu melhor ano em programação.
+# Habits - Você no controle do seus hábitos
 
 ## 🚀 Tecnologias
 
