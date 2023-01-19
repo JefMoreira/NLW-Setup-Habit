@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=Taught%20by&message=Rocketseat&color=white&labelColor=0ea5e9" alt="Taught by Rocketseat">
-  <img src="https://img.shields.io/github/forks/JefMoreira/nlw-setup-ignite?label=forks&message=MIT&color=white&labelColor=0ea5e9" alt="Forks">
-  <img src="https://img.shields.io/github/stars/JefMoreira/nlw-setup-ignite?label=stars&message=MIT&color=white&labelColor=0ea5e9" alt="Stars">
+  <img src="https://img.shields.io/github/forks/JefMoreira/NLW-Setup-Habit?label=forks&message=MIT&color=white&labelColor=38BDF8" alt="Forks">
+  <img src="https://img.shields.io/github/stars/JefMoreira/NLW-Setup-Habit?label=stars&message=MIT&color=white&labelColor=38BDF8" alt="Stars">
 </p>
 
 ![](./.github/cover.png)
