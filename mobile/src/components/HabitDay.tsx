@@ -15,23 +15,25 @@ interface Props extends TouchableOpacityProps {
   date: Date;
 };
 
-export function HabitDay({amountOfHabits = 0, amountCompleted = 0, date, ...rest } : Props) {
-
-  const amountAccomplishedPercentage = amountOfHabits > 0 ? generateProgressPorcentage(amountOfHabits, amountCompleted) : 0;
+export function HabitDay({ amountOfHabits = 0, amountCompleted = 0, date, ...rest }: Props) {
+  const amountAccomplishedPercentage = 
+  amountOfHabits > 0 ? generateProgressPorcentage(amountOfHabits, amountCompleted) : 0
+  
   const today = dayjs().startOf('day').toDate();
   const isCurrentDay = dayjs(date).isSame(today);
   
   return (
     <TouchableOpacity 
       className={clsx("rounded-lg border-2 m-1", {
-        ['bg-sky-500 border-sky-300']: amountAccomplishedPercentage >= 80,
-        ['bg-sky-600 border-sky-400']: amountAccomplishedPercentage >= 60 && amountAccomplishedPercentage < 80,
-        ['bg-sky-700 border-sky-500']: amountAccomplishedPercentage >= 40 && amountAccomplishedPercentage < 60,
-        ['bg-sky-800 border-sky-600']: amountAccomplishedPercentage >= 20 && amountAccomplishedPercentage < 40,
-        ['bg-sky-900 border-sky-700']: amountAccomplishedPercentage > 0 && amountAccomplishedPercentage < 20,
-        ['bg-zinc-900  border-zinc-800']: amountAccomplishedPercentage === 0,
-        ['border-white border-4']: isCurrentDay
-      })}
+        ["bg-zinc-900 border-zinc-800"] : amountAccomplishedPercentage === 0,
+        ["bg-sky-900 border-sky-700"] : amountAccomplishedPercentage > 0 && amountAccomplishedPercentage < 20,
+        ["bg-sky-800 border-sky-600"] : amountAccomplishedPercentage >= 20 && amountAccomplishedPercentage < 40,
+        ["bg-sky-700 border-sky-500"] : amountAccomplishedPercentage >= 40 && amountAccomplishedPercentage < 60,
+        ["bg-sky-600 border-sky-500"] : amountAccomplishedPercentage >= 60 && amountAccomplishedPercentage < 80,
+        ["bg-sky-500 border-sky-400"] : amountAccomplishedPercentage >= 80,
+        ["border-white border-4"] : isCurrentDay,
+      }
+      )}
       style={{ width: DAY_SIZE, height: DAY_SIZE }}
       activeOpacity={0.7}
       {...rest}
